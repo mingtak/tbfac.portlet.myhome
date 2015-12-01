@@ -1,0 +1,81 @@
+<tal:isowner define="isOwner context/@@isOwner">
+
+<dl class="portlet portletMyHome"
+    i18n:domain="tbfac.portlet.myhome">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        我的專區
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <dd class="portletItem odd">
+      <img tal:condition="exists:context/@@images/leadImage/homepage"
+           tal:replace="structure context/@@images/leadImage/homepage"/>
+    </dd>
+
+      <br/><hr /><br/>
+
+    <dd class="portletItem">
+      <a tal:condition="isOwner"
+         href="./edit" i18n:translate="">Edit Personal Information</a><br/>
+      <span class="portletItemDetails" />
+    </dd>
+
+    <dd class="portletItem" tal:condition="python:view.checkPermission('tbfac.AddInfo') and isOwner">
+      <a tal:attributes="href string:${context/portal_url}/event/info/++add++tbfac.Info"
+         i18n:translate="">Add Info</a><br/>
+      <span class="portletItemDetails" />
+    </dd>
+
+
+    <dd class="portletItem" tal:condition="python:view.checkPermission('tbfac.AddArtAndLife') and isOwner">
+      <a tal:attributes="href string:${context/portal_url}/juries/${context/@@currentUserId}/++add++tbfac.newcontent.artandlife" 
+        i18n:translate="">Add Art & Life</a><br/>
+      <span class="portletItemDetails" />
+    </dd>
+
+    <dd class="portletItem" tal:condition="isOwner">
+      <a tal:attributes="href string:${context/portal_url}/event/talks/++add++tbfac.Article" 
+        i18n:translate="">Add Article</a><br/>
+      <span class="portletItemDetails" />
+    </dd>
+
+    <dd class="portletItem" tal:condition="python:view.checkPermission('tbfac.AddQuarterly') and isOwner">
+      <a tal:attributes="href string:${context/portal_url}/juries/${context/@@currentUserId}/++add++tbfac.Quarterly"
+         i18n:translate="">Add Quarterly</a><br/>
+      <span class="portletItemDetails" />
+    </dd>
+
+    <dd class="portletItem" tal:condition="python:view.checkPermission('tbfac.AddReview') and isOwner">
+      <a tal:attributes="href string:${context/portal_url}/juries/${context/@@currentUserId}/++add++tbfac.Review"
+         i18n:translate="">Add Reveiew</a><br/>
+      <span class="portletItemDetails" />
+    </dd>
+
+    <dd class="portletItem" tal:condition="python:(view.checkPermission('tbfac.AddReview') or
+                                           view.checkPermission('tbfac.AddArtAndLife'))  and isOwner">
+      <a tal:attributes="href string:${context/portal_url}/juries/${context/@@currentUserId}/createObject?type_name=Image"
+         i18n:translate="">Add Image</a><br/>
+      <span class="portletItemDetails" />
+    </dd>
+
+    <br /><hr><br />
+
+    <dt class="portletHeader" tal:condition="isOwner">
+        <span class="portletTopLeft"></span>
+        我的收藏
+        <span class="portletTopRight"></span>
+    </dt>
+    <dd class="portletItem"
+        tal:condition="isOwner"
+        tal:repeat="item context/collect">
+      <img src="http://talks.taishinart.org.tw/++resource++tbfac.content/article.png" alt="文章" height="16" width="16">
+      <a tal:attributes="href item/to_object/absolute_url" tal:content="item/to_object/Title" />
+      --<<tal:type replace="item/to_object/Type"/>>
+      <span class="portletItemDetails" />
+    </dd>
+
+</dl>
+
+</tal:isowner>

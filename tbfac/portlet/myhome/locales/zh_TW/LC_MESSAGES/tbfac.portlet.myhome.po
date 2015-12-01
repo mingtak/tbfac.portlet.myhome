@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2015-08-05 09:30+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: ./myhome.pt:33
+msgid "Add Art & Life"
+msgstr "新增身心靈快藝通"
+
+#: ./myhome.pt:39
+msgid "Add Article"
+msgstr "新增藝論紛紛"
+
+#: ./myhome.pt:58
+msgid "Add Image"
+msgstr "新增圖檔"
+
+#: ./myhome.pt:26
+msgid "Add Info"
+msgstr "新增藝術動態"
+
+#: ./myhome.pt:45
+msgid "Add Quarterly"
+msgstr "新增提名觀察人 季提名名單"
+
+#: ./myhome.pt:51
+msgid "Add Reveiew"
+msgstr "新增提名觀察人 展演觀察評論"
+
+#: ./myhome.pt:20
+msgid "Edit Personal Information"
+msgstr "編輯個人資訊"
+

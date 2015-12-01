@@ -1,0 +1,47 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2015-08-05 09:30+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: tbfac.portlet.myhome\n"
+
+#: ./myhome.pt:33
+msgid "Add Art & Life"
+msgstr ""
+
+#: ./myhome.pt:39
+msgid "Add Article"
+msgstr ""
+
+#: ./myhome.pt:58
+msgid "Add Image"
+msgstr ""
+
+#: ./myhome.pt:26
+msgid "Add Info"
+msgstr ""
+
+#: ./myhome.pt:45
+msgid "Add Quarterly"
+msgstr ""
+
+#: ./myhome.pt:51
+msgid "Add Reveiew"
+msgstr ""
+
+#: ./myhome.pt:20
+msgid "Edit Personal Information"
+msgstr ""
+
