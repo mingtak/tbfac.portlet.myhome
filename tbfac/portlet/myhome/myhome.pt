@@ -54,7 +54,7 @@
     </dd>
 
     <dd class="portletItem" tal:condition="python:(view.checkPermission('tbfac.AddReview') or
-                                           view.checkPermission('tbfac.AddArtAndLife'))  and isOwner">
+                                           view.checkPermission('tbfac.AddArtAndLife'))  or isOwner">
       <a tal:attributes="href string:${context/portal_url}/juries/${context/@@currentUserId}/createObject?type_name=Image"
          i18n:translate="">Add Image</a><br/>
       <span class="portletItemDetails" />
@@ -70,7 +70,7 @@
     <dd class="portletItem"
         tal:condition="isOwner"
         tal:repeat="item context/collect">
-      <img src="http://talks.taishinart.org.tw/++resource++tbfac.content/article.png" alt="文章" height="16" width="16">
+      <img src="https://talks.taishinart.org.tw/++resource++tbfac.content/article.png" alt="文章" height="16" width="16">
       <a tal:attributes="href item/to_object/absolute_url" tal:content="item/to_object/Title" />
       --<<tal:type replace="item/to_object/Type"/>>
       <span class="portletItemDetails" />
